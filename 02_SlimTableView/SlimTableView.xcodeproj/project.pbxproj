@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32F78D071B5609B600F6FBCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F78D061B5609B600F6FBCA /* main.m */; };
+		32F78D0A1B5609B600F6FBCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F78D091B5609B600F6FBCA /* AppDelegate.m */; };
+		32F78D121B5609B600F6FBCA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F78D111B5609B600F6FBCA /* Images.xcassets */; };
+		32F78D151B5609B600F6FBCA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F78D131B5609B600F6FBCA /* LaunchScreen.xib */; };
+		32F78D211B5609B600F6FBCA /* SlimTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F78D201B5609B600F6FBCA /* SlimTableViewTests.m */; };
+		32F78D341B560AA600F6FBCA /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F78D2D1B560AA600F6FBCA /* TableCell.m */; };
+		32F78D351B560AA600F6FBCA /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F78D2E1B560AA600F6FBCA /* TableCell.xib */; };
+		32F78D361B560AA600F6FBCA /* VCTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F78D301B560AA600F6FBCA /* VCTable.m */; };
+		32F78D371B560AA600F6FBCA /* VCTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F78D311B560AA600F6FBCA /* VCTable.xib */; };
+		32F78D381B560AA600F6FBCA /* VCTableCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F78D331B560AA600F6FBCA /* VCTableCellData.m */; };
+		32F78D3C1B560ADC00F6FBCA /* MyAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F78D3B1B560ADC00F6FBCA /* MyAPI.m */; };
+		32F78D3F1B56105B00F6FBCA /* VCTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F78D3E1B56105B00F6FBCA /* VCTableDataSource.m */; };
+		32F78D421B5610A700F6FBCA /* VCTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F78D411B5610A700F6FBCA /* VCTableDelegate.m */; };
+		32F78D451B56110700F6FBCA /* VCTableCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F78D441B56110700F6FBCA /* VCTableCoordinator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32F78D1B1B5609B600F6FBCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32F78CF91B5609B600F6FBCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32F78D001B5609B600F6FBCA;
+			remoteInfo = SlimTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32F78D011B5609B600F6FBCA /* SlimTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlimTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F78D051B5609B600F6FBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F78D061B5609B600F6FBCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32F78D081B5609B600F6FBCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32F78D091B5609B600F6FBCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32F78D111B5609B600F6FBCA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		32F78D141B5609B600F6FBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		32F78D1A1B5609B600F6FBCA /* SlimTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlimTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F78D1F1B5609B600F6FBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F78D201B5609B600F6FBCA /* SlimTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlimTableViewTests.m; sourceTree = "<group>"; };
+		32F78D2C1B560AA600F6FBCA /* TableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCell.h; sourceTree = "<group>"; };
+		32F78D2D1B560AA600F6FBCA /* TableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCell.m; sourceTree = "<group>"; };
+		32F78D2E1B560AA600F6FBCA /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
+		32F78D2F1B560AA600F6FBCA /* VCTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTable.h; sourceTree = "<group>"; };
+		32F78D301B560AA600F6FBCA /* VCTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTable.m; sourceTree = "<group>"; };
+		32F78D311B560AA600F6FBCA /* VCTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCTable.xib; sourceTree = "<group>"; };
+		32F78D321B560AA600F6FBCA /* VCTableCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTableCellData.h; sourceTree = "<group>"; };
+		32F78D331B560AA600F6FBCA /* VCTableCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTableCellData.m; sourceTree = "<group>"; };
+		32F78D3A1B560ADC00F6FBCA /* MyAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAPI.h; sourceTree = "<group>"; };
+		32F78D3B1B560ADC00F6FBCA /* MyAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAPI.m; sourceTree = "<group>"; };
+		32F78D3D1B56105B00F6FBCA /* VCTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTableDataSource.h; sourceTree = "<group>"; };
+		32F78D3E1B56105B00F6FBCA /* VCTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTableDataSource.m; sourceTree = "<group>"; };
+		32F78D401B5610A700F6FBCA /* VCTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTableDelegate.h; sourceTree = "<group>"; };
+		32F78D411B5610A700F6FBCA /* VCTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTableDelegate.m; sourceTree = "<group>"; };
+		32F78D431B56110700F6FBCA /* VCTableCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTableCoordinator.h; sourceTree = "<group>"; };
+		32F78D441B56110700F6FBCA /* VCTableCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTableCoordinator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32F78CFE1B5609B600F6FBCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F78D171B5609B600F6FBCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32F78CF81B5609B600F6FBCA = {
+			isa = PBXGroup;
+			children = (
+				32F78D031B5609B600F6FBCA /* SlimTableView */,
+				32F78D1D1B5609B600F6FBCA /* SlimTableViewTests */,
+				32F78D021B5609B600F6FBCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32F78D021B5609B600F6FBCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32F78D011B5609B600F6FBCA /* SlimTableView.app */,
+				32F78D1A1B5609B600F6FBCA /* SlimTableViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32F78D031B5609B600F6FBCA /* SlimTableView */ = {
+			isa = PBXGroup;
+			children = (
+				32F78D391B560AD200F6FBCA /* MyAPI */,
+				32F78D2A1B560AA600F6FBCA /* ViewControllers */,
+				32F78D081B5609B600F6FBCA /* AppDelegate.h */,
+				32F78D091B5609B600F6FBCA /* AppDelegate.m */,
+				32F78D111B5609B600F6FBCA /* Images.xcassets */,
+				32F78D131B5609B600F6FBCA /* LaunchScreen.xib */,
+				32F78D041B5609B600F6FBCA /* Supporting Files */,
+			);
+			path = SlimTableView;
+			sourceTree = "<group>";
+		};
+		32F78D041B5609B600F6FBCA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32F78D051B5609B600F6FBCA /* Info.plist */,
+				32F78D061B5609B600F6FBCA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32F78D1D1B5609B600F6FBCA /* SlimTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				32F78D201B5609B600F6FBCA /* SlimTableViewTests.m */,
+				32F78D1E1B5609B600F6FBCA /* Supporting Files */,
+			);
+			path = SlimTableViewTests;
+			sourceTree = "<group>";
+		};
+		32F78D1E1B5609B600F6FBCA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32F78D1F1B5609B600F6FBCA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32F78D2A1B560AA600F6FBCA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				32F78D2B1B560AA600F6FBCA /* VCTable */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		32F78D2B1B560AA600F6FBCA /* VCTable */ = {
+			isa = PBXGroup;
+			children = (
+				32F78D2C1B560AA600F6FBCA /* TableCell.h */,
+				32F78D2D1B560AA600F6FBCA /* TableCell.m */,
+				32F78D2E1B560AA600F6FBCA /* TableCell.xib */,
+				32F78D2F1B560AA600F6FBCA /* VCTable.h */,
+				32F78D301B560AA600F6FBCA /* VCTable.m */,
+				32F78D311B560AA600F6FBCA /* VCTable.xib */,
+				32F78D321B560AA600F6FBCA /* VCTableCellData.h */,
+				32F78D331B560AA600F6FBCA /* VCTableCellData.m */,
+				32F78D3D1B56105B00F6FBCA /* VCTableDataSource.h */,
+				32F78D3E1B56105B00F6FBCA /* VCTableDataSource.m */,
+				32F78D401B5610A700F6FBCA /* VCTableDelegate.h */,
+				32F78D411B5610A700F6FBCA /* VCTableDelegate.m */,
+				32F78D431B56110700F6FBCA /* VCTableCoordinator.h */,
+				32F78D441B56110700F6FBCA /* VCTableCoordinator.m */,
+			);
+			path = VCTable;
+			sourceTree = "<group>";
+		};
+		32F78D391B560AD200F6FBCA /* MyAPI */ = {
+			isa = PBXGroup;
+			children = (
+				32F78D3A1B560ADC00F6FBCA /* MyAPI.h */,
+				32F78D3B1B560ADC00F6FBCA /* MyAPI.m */,
+			);
+			path = MyAPI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32F78D001B5609B600F6FBCA /* SlimTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F78D241B5609B600F6FBCA /* Build configuration list for PBXNativeTarget "SlimTableView" */;
+			buildPhases = (
+				32F78CFD1B5609B600F6FBCA /* Sources */,
+				32F78CFE1B5609B600F6FBCA /* Frameworks */,
+				32F78CFF1B5609B600F6FBCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlimTableView;
+			productName = SlimTableView;
+			productReference = 32F78D011B5609B600F6FBCA /* SlimTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32F78D191B5609B600F6FBCA /* SlimTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F78D271B5609B600F6FBCA /* Build configuration list for PBXNativeTarget "SlimTableViewTests" */;
+			buildPhases = (
+				32F78D161B5609B600F6FBCA /* Sources */,
+				32F78D171B5609B600F6FBCA /* Frameworks */,
+				32F78D181B5609B600F6FBCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32F78D1C1B5609B600F6FBCA /* PBXTargetDependency */,
+			);
+			name = SlimTableViewTests;
+			productName = SlimTableViewTests;
+			productReference = 32F78D1A1B5609B600F6FBCA /* SlimTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32F78CF91B5609B600F6FBCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Mustard;
+				TargetAttributes = {
+					32F78D001B5609B600F6FBCA = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					32F78D191B5609B600F6FBCA = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 32F78D001B5609B600F6FBCA;
+					};
+				};
+			};
+			buildConfigurationList = 32F78CFC1B5609B600F6FBCA /* Build configuration list for PBXProject "SlimTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32F78CF81B5609B600F6FBCA;
+			productRefGroup = 32F78D021B5609B600F6FBCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32F78D001B5609B600F6FBCA /* SlimTableView */,
+				32F78D191B5609B600F6FBCA /* SlimTableViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32F78CFF1B5609B600F6FBCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F78D151B5609B600F6FBCA /* LaunchScreen.xib in Resources */,
+				32F78D371B560AA600F6FBCA /* VCTable.xib in Resources */,
+				32F78D351B560AA600F6FBCA /* TableCell.xib in Resources */,
+				32F78D121B5609B600F6FBCA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F78D181B5609B600F6FBCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32F78CFD1B5609B600F6FBCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F78D421B5610A700F6FBCA /* VCTableDelegate.m in Sources */,
+				32F78D3C1B560ADC00F6FBCA /* MyAPI.m in Sources */,
+				32F78D341B560AA600F6FBCA /* TableCell.m in Sources */,
+				32F78D3F1B56105B00F6FBCA /* VCTableDataSource.m in Sources */,
+				32F78D451B56110700F6FBCA /* VCTableCoordinator.m in Sources */,
+				32F78D361B560AA600F6FBCA /* VCTable.m in Sources */,
+				32F78D381B560AA600F6FBCA /* VCTableCellData.m in Sources */,
+				32F78D0A1B5609B600F6FBCA /* AppDelegate.m in Sources */,
+				32F78D071B5609B600F6FBCA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F78D161B5609B600F6FBCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F78D211B5609B600F6FBCA /* SlimTableViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32F78D1C1B5609B600F6FBCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32F78D001B5609B600F6FBCA /* SlimTableView */;
+			targetProxy = 32F78D1B1B5609B600F6FBCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32F78D131B5609B600F6FBCA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32F78D141B5609B600F6FBCA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32F78D221B5609B600F6FBCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32F78D231B5609B600F6FBCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32F78D251B5609B600F6FBCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SlimTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		32F78D261B5609B600F6FBCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SlimTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		32F78D281B5609B600F6FBCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SlimTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlimTableView.app/SlimTableView";
+			};
+			name = Debug;
+		};
+		32F78D291B5609B600F6FBCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SlimTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlimTableView.app/SlimTableView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32F78CFC1B5609B600F6FBCA /* Build configuration list for PBXProject "SlimTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F78D221B5609B600F6FBCA /* Debug */,
+				32F78D231B5609B600F6FBCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32F78D241B5609B600F6FBCA /* Build configuration list for PBXNativeTarget "SlimTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F78D251B5609B600F6FBCA /* Debug */,
+				32F78D261B5609B600F6FBCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32F78D271B5609B600F6FBCA /* Build configuration list for PBXNativeTarget "SlimTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F78D281B5609B600F6FBCA /* Debug */,
+				32F78D291B5609B600F6FBCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32F78CF91B5609B600F6FBCA /* Project object */;
+}

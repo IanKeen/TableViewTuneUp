@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32F78CB01B55F1A700F6FBCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F78CAF1B55F1A700F6FBCA /* main.m */; };
+		32F78CB31B55F1A700F6FBCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F78CB21B55F1A700F6FBCA /* AppDelegate.m */; };
+		32F78CBB1B55F1A700F6FBCA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F78CBA1B55F1A700F6FBCA /* Images.xcassets */; };
+		32F78CBE1B55F1A700F6FBCA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F78CBC1B55F1A700F6FBCA /* LaunchScreen.xib */; };
+		32F78CCA1B55F1A700F6FBCA /* FatTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F78CC91B55F1A700F6FBCA /* FatTableViewTests.m */; };
+		32F78CEB1B55F20100F6FBCA /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F78CD91B55F20100F6FBCA /* TableCell.m */; };
+		32F78CEC1B55F20100F6FBCA /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F78CDA1B55F20100F6FBCA /* TableCell.xib */; };
+		32F78CEE1B55F20100F6FBCA /* VCTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F78CDE1B55F20100F6FBCA /* VCTable.m */; };
+		32F78CEF1B55F20100F6FBCA /* VCTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F78CDF1B55F20100F6FBCA /* VCTable.xib */; };
+		32F78CF01B55F20100F6FBCA /* VCTableCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F78CE11B55F20100F6FBCA /* VCTableCellData.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32F78CC41B55F1A700F6FBCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32F78CA21B55F1A700F6FBCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32F78CA91B55F1A700F6FBCA;
+			remoteInfo = FatTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32F78CAA1B55F1A700F6FBCA /* FatTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FatTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F78CAE1B55F1A700F6FBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F78CAF1B55F1A700F6FBCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32F78CB11B55F1A700F6FBCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32F78CB21B55F1A700F6FBCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32F78CBA1B55F1A700F6FBCA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		32F78CBD1B55F1A700F6FBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		32F78CC31B55F1A700F6FBCA /* FatTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FatTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F78CC81B55F1A700F6FBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F78CC91B55F1A700F6FBCA /* FatTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FatTableViewTests.m; sourceTree = "<group>"; };
+		32F78CD81B55F20100F6FBCA /* TableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCell.h; sourceTree = "<group>"; };
+		32F78CD91B55F20100F6FBCA /* TableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCell.m; sourceTree = "<group>"; };
+		32F78CDA1B55F20100F6FBCA /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
+		32F78CDD1B55F20100F6FBCA /* VCTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTable.h; sourceTree = "<group>"; };
+		32F78CDE1B55F20100F6FBCA /* VCTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTable.m; sourceTree = "<group>"; };
+		32F78CDF1B55F20100F6FBCA /* VCTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCTable.xib; sourceTree = "<group>"; };
+		32F78CE01B55F20100F6FBCA /* VCTableCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTableCellData.h; sourceTree = "<group>"; };
+		32F78CE11B55F20100F6FBCA /* VCTableCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTableCellData.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32F78CA71B55F1A700F6FBCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F78CC01B55F1A700F6FBCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32F78CA11B55F1A700F6FBCA = {
+			isa = PBXGroup;
+			children = (
+				32F78CAC1B55F1A700F6FBCA /* FatTableView */,
+				32F78CC61B55F1A700F6FBCA /* FatTableViewTests */,
+				32F78CAB1B55F1A700F6FBCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32F78CAB1B55F1A700F6FBCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32F78CAA1B55F1A700F6FBCA /* FatTableView.app */,
+				32F78CC31B55F1A700F6FBCA /* FatTableViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32F78CAC1B55F1A700F6FBCA /* FatTableView */ = {
+			isa = PBXGroup;
+			children = (
+				32F78CD61B55F20100F6FBCA /* ViewControllers */,
+				32F78CB11B55F1A700F6FBCA /* AppDelegate.h */,
+				32F78CB21B55F1A700F6FBCA /* AppDelegate.m */,
+				32F78CBA1B55F1A700F6FBCA /* Images.xcassets */,
+				32F78CBC1B55F1A700F6FBCA /* LaunchScreen.xib */,
+				32F78CAD1B55F1A700F6FBCA /* Supporting Files */,
+			);
+			path = FatTableView;
+			sourceTree = "<group>";
+		};
+		32F78CAD1B55F1A700F6FBCA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32F78CAE1B55F1A700F6FBCA /* Info.plist */,
+				32F78CAF1B55F1A700F6FBCA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32F78CC61B55F1A700F6FBCA /* FatTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				32F78CC91B55F1A700F6FBCA /* FatTableViewTests.m */,
+				32F78CC71B55F1A700F6FBCA /* Supporting Files */,
+			);
+			path = FatTableViewTests;
+			sourceTree = "<group>";
+		};
+		32F78CC71B55F1A700F6FBCA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32F78CC81B55F1A700F6FBCA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32F78CD61B55F20100F6FBCA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				32F78CD71B55F20100F6FBCA /* VCTable */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		32F78CD71B55F20100F6FBCA /* VCTable */ = {
+			isa = PBXGroup;
+			children = (
+				32F78CD81B55F20100F6FBCA /* TableCell.h */,
+				32F78CD91B55F20100F6FBCA /* TableCell.m */,
+				32F78CDA1B55F20100F6FBCA /* TableCell.xib */,
+				32F78CDD1B55F20100F6FBCA /* VCTable.h */,
+				32F78CDE1B55F20100F6FBCA /* VCTable.m */,
+				32F78CDF1B55F20100F6FBCA /* VCTable.xib */,
+				32F78CE01B55F20100F6FBCA /* VCTableCellData.h */,
+				32F78CE11B55F20100F6FBCA /* VCTableCellData.m */,
+			);
+			path = VCTable;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32F78CA91B55F1A700F6FBCA /* FatTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F78CCD1B55F1A700F6FBCA /* Build configuration list for PBXNativeTarget "FatTableView" */;
+			buildPhases = (
+				32F78CA61B55F1A700F6FBCA /* Sources */,
+				32F78CA71B55F1A700F6FBCA /* Frameworks */,
+				32F78CA81B55F1A700F6FBCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FatTableView;
+			productName = FatTableView;
+			productReference = 32F78CAA1B55F1A700F6FBCA /* FatTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32F78CC21B55F1A700F6FBCA /* FatTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F78CD01B55F1A700F6FBCA /* Build configuration list for PBXNativeTarget "FatTableViewTests" */;
+			buildPhases = (
+				32F78CBF1B55F1A700F6FBCA /* Sources */,
+				32F78CC01B55F1A700F6FBCA /* Frameworks */,
+				32F78CC11B55F1A700F6FBCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32F78CC51B55F1A700F6FBCA /* PBXTargetDependency */,
+			);
+			name = FatTableViewTests;
+			productName = FatTableViewTests;
+			productReference = 32F78CC31B55F1A700F6FBCA /* FatTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32F78CA21B55F1A700F6FBCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Mustard;
+				TargetAttributes = {
+					32F78CA91B55F1A700F6FBCA = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					32F78CC21B55F1A700F6FBCA = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 32F78CA91B55F1A700F6FBCA;
+					};
+				};
+			};
+			buildConfigurationList = 32F78CA51B55F1A700F6FBCA /* Build configuration list for PBXProject "FatTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32F78CA11B55F1A700F6FBCA;
+			productRefGroup = 32F78CAB1B55F1A700F6FBCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32F78CA91B55F1A700F6FBCA /* FatTableView */,
+				32F78CC21B55F1A700F6FBCA /* FatTableViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32F78CA81B55F1A700F6FBCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F78CBE1B55F1A700F6FBCA /* LaunchScreen.xib in Resources */,
+				32F78CEF1B55F20100F6FBCA /* VCTable.xib in Resources */,
+				32F78CEC1B55F20100F6FBCA /* TableCell.xib in Resources */,
+				32F78CBB1B55F1A700F6FBCA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F78CC11B55F1A700F6FBCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32F78CA61B55F1A700F6FBCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F78CB31B55F1A700F6FBCA /* AppDelegate.m in Sources */,
+				32F78CEE1B55F20100F6FBCA /* VCTable.m in Sources */,
+				32F78CF01B55F20100F6FBCA /* VCTableCellData.m in Sources */,
+				32F78CEB1B55F20100F6FBCA /* TableCell.m in Sources */,
+				32F78CB01B55F1A700F6FBCA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F78CBF1B55F1A700F6FBCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F78CCA1B55F1A700F6FBCA /* FatTableViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32F78CC51B55F1A700F6FBCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32F78CA91B55F1A700F6FBCA /* FatTableView */;
+			targetProxy = 32F78CC41B55F1A700F6FBCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32F78CBC1B55F1A700F6FBCA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32F78CBD1B55F1A700F6FBCA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32F78CCB1B55F1A700F6FBCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32F78CCC1B55F1A700F6FBCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32F78CCE1B55F1A700F6FBCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FatTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		32F78CCF1B55F1A700F6FBCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FatTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		32F78CD11B55F1A700F6FBCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FatTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FatTableView.app/FatTableView";
+			};
+			name = Debug;
+		};
+		32F78CD21B55F1A700F6FBCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FatTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FatTableView.app/FatTableView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32F78CA51B55F1A700F6FBCA /* Build configuration list for PBXProject "FatTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F78CCB1B55F1A700F6FBCA /* Debug */,
+				32F78CCC1B55F1A700F6FBCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32F78CCD1B55F1A700F6FBCA /* Build configuration list for PBXNativeTarget "FatTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F78CCE1B55F1A700F6FBCA /* Debug */,
+				32F78CCF1B55F1A700F6FBCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32F78CD01B55F1A700F6FBCA /* Build configuration list for PBXNativeTarget "FatTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F78CD11B55F1A700F6FBCA /* Debug */,
+				32F78CD21B55F1A700F6FBCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32F78CA21B55F1A700F6FBCA /* Project object */;
+}

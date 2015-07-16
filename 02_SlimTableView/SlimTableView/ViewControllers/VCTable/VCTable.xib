@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VCTable">
+            <connections>
+                <outlet property="tableViewCoordinator" destination="wMT-Kl-UJ6" id="b5a-Ic-EMB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Xxm-mO-svo">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="gbT-O3-K35" id="7Eg-Gl-SIy"/>
+                        <outlet property="delegate" destination="hiQ-Od-AZc" id="Y2o-dF-9X8"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Xxm-mO-svo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4hl-Xs-mSs"/>
+                <constraint firstItem="Xxm-mO-svo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="L9c-2O-Oz6"/>
+                <constraint firstAttribute="trailing" secondItem="Xxm-mO-svo" secondAttribute="trailing" id="Xzg-cR-iQN"/>
+                <constraint firstAttribute="bottom" secondItem="Xxm-mO-svo" secondAttribute="bottom" id="raJ-mt-cPC"/>
+            </constraints>
+        </view>
+        <customObject id="gbT-O3-K35" customClass="VCTableDataSource"/>
+        <customObject id="hiQ-Od-AZc" customClass="VCTableDelegate">
+            <connections>
+                <action selector="itemPressed:" destination="-1" eventType="valueChanged" id="oCB-X0-hcs"/>
+            </connections>
+        </customObject>
+        <customObject id="wMT-Kl-UJ6" customClass="VCTableCoordinator">
+            <connections>
+                <outlet property="dataSource" destination="gbT-O3-K35" id="ihX-SH-Vnw"/>
+                <outlet property="delegate" destination="hiQ-Od-AZc" id="pUC-hs-tg9"/>
+                <outlet property="tableView" destination="Xxm-mO-svo" id="aUG-it-pOc"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>
