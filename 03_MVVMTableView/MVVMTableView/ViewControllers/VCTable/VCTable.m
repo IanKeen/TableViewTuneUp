@@ -62,7 +62,7 @@
         [self endRefreshing];
         
         [[[UIAlertView alloc]
-          initWithTitle:@"Oops.."
+          initWithTitle:@"Oops..."
           message:error
           delegate:nil
           cancelButtonTitle:@"OK"
