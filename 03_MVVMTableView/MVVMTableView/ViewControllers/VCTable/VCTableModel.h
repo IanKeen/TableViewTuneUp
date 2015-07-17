@@ -10,9 +10,9 @@
 @class MyAPI;
 @class VCTableCellData;
 
-typedef void(^didReloadData)(NSArray *data);
-typedef void(^didError)(NSString *error);
-typedef void(^didUpdateNavigationTitle)(NSString *title);
+typedef void(^didReloadDataBlock)(NSArray *data);
+typedef void(^didErrorBlock)(NSString *error);
+typedef void(^didUpdateNavigationTitleBlock)(NSString *title);
 
 @interface VCTableModel : NSObject
 -(instancetype)initWithManager:(MyAPI *)api;
@@ -22,7 +22,7 @@ typedef void(^didUpdateNavigationTitle)(NSString *title);
 
 @property (readonly) NSString *title;
 
-@property (nonatomic, copy) didReloadData didReloadData;
-@property (nonatomic, copy) didError didError;
-@property (nonatomic, copy) didUpdateNavigationTitle didUpdateNavigationTitle;
+@property (nonatomic, copy) didReloadDataBlock didReloadData;
+@property (nonatomic, copy) didErrorBlock didError;
+@property (nonatomic, copy) didUpdateNavigationTitleBlock didUpdateNavigationTitle;
 @end

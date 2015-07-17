@@ -57,7 +57,7 @@
     self.model.didReloadData = [self modelDidReloadData];
     self.model.didUpdateNavigationTitle = [self modelDidUpdateNavigationTitle];
 }
--(didError)modelDidError {
+-(didErrorBlock)modelDidError {
     return ^(NSString *error) {
         [self endRefreshing];
         
@@ -70,13 +70,13 @@
          show];
     };
 }
--(didReloadData)modelDidReloadData {
+-(didReloadDataBlock)modelDidReloadData {
     return ^(NSArray *data) {
         [self endRefreshing];
         [self.tableViewCoordinator reloadData:data];
     };
 }
--(didUpdateNavigationTitle)modelDidUpdateNavigationTitle {
+-(didUpdateNavigationTitleBlock)modelDidUpdateNavigationTitle {
     return ^(NSString *title) {
         self.title = title;
     };
