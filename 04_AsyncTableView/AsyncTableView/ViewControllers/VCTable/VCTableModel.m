@@ -23,7 +23,7 @@
 
 #pragma mark - Public
 -(NSString *)title {
-    return @"MVVM Table View Example";
+    return @"Async Table View Example";
 }
 -(void)reloadData {
     [self sendNavigationTitle:self.title];

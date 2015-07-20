@@ -7,7 +7,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class TableOperationsManager;
+
 @interface VCTableCoordinator : NSObject
 -(void)reloadData:(NSArray *)data;
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) TableOperationsManager *manager;
 @end

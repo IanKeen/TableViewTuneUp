@@ -7,7 +7,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class TableOperationsManager;
+
 @interface VCTableDelegate : UIControl <UITableViewDelegate>
 @property (nonatomic, strong) NSArray *data;
 @property (readonly) id selectedData;
+@property (nonatomic, strong) TableOperationsManager *manager;
 @end

@@ -7,6 +7,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class TableOperationsManager;
+
 @interface VCTableDataSource : NSObject <UITableViewDataSource>
 @property (nonatomic, strong) NSArray *data;
+@property (nonatomic, strong) TableOperationsManager *manager;
 @end

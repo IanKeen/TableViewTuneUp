@@ -7,6 +7,8 @@
 
 #import "VCTableDataSource.h"
 #import "TableCell.h"
+#import "VCTableCellData+TableOperation.h"
+#import "TableOperationsManager.h"
 
 @implementation VCTableDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -17,6 +19,12 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TableCell class]) forIndexPath:indexPath];
+    
+    VCTableCellData *data = self.data[indexPath.row];
+    TableOperation *operation = [data operation];
+    [self.manager addOperationIfNeeded:operation indexPath:indexPath];
+    [self.manager getDataForCellAtIndexPath:indexPath];
+    
     return cell;
 }
 @end

@@ -11,4 +11,5 @@
 
 @interface TableCell : UITableViewCell
 -(void)setup:(VCTableCellData *)data;
+-(void)updateImage:(UIImage *)image;
 @end

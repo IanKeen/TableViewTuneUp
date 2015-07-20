@@ -17,9 +17,8 @@
 -(void)setup:(VCTableCellData *)data {
     self.cellTitle.text = [NSString stringWithFormat:@"Entry ID: %@", data.id];
     self.cellImage.image = nil;
-    
-    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:data.url]];
-    UIImage *image = [UIImage imageWithData:imageData];
+}
+-(void)updateImage:(UIImage *)image {
     self.cellImage.image = image;
 }
 @end
