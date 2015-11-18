@@ -58,16 +58,16 @@ static NSString *kURL = @"http://jsonplaceholder.typicode.com/photos";
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSError *err = nil;
+		NSArray *json = nil;
         NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:kURL]];
         if (data == nil) {
             err = [NSError errorWithDomain:NSStringFromClass([self class]) code:0
                                   userInfo:@{NSLocalizedDescriptionKey: @"No data returned by server"}];
-			[self endRefreshing];
-			return;
         }
-        
-        NSArray *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&err];
-        
+		else {
+			json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&err];
+		}
+		
         dispatch_async(dispatch_get_main_queue(), ^{
             if (err) {
                 [self endRefreshing];
